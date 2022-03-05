@@ -1,0 +1,61 @@
+.wrap{
+    background-color: white;
+    width: 1400px;
+    display: flex;
+}
+.item{
+    width: 400px;
+    font-size: 20px;
+    margin: auto;
+    padding: auto;
+    text-align: left;
+}
+.item img{
+    width: 100%;
+    border-radius: 10px; 
+    height: 198px;
+
+}
+h1{
+    text-align: center;
+
+}
+p{
+    color: rgb(153, 147, 147);
+    font-size: 8px;
+    
+}
+
+.button{
+    text-align: center;
+    background-color: rgb(222, 49, 49);
+    width: 120px;
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    margin: 0px auto;
+    padding: 10px;
+    border-radius: 10px;
+    line-height: 40px;
+    margin-top: 60px;
+    
+    
+}
+
+.button:hover{
+    background-color: brown;
+}
+
+span{
+    display: block;
+    margin-top: -15px;
+    margin-bottom: 30px;
+    color:crimson;
+    font-size: 20px;
+    
+    
+    
+    /* border-bottom: red solid; */
+    /* padding-bottom: 20px ; */
+
+}
