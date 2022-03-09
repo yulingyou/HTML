@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .wrap {
+        display: flex;
+        background-color: gray;
+        margin: auto;
+
+        justify-content: space-between;
+
+        /* flex-direction: row; */
+      }
+      .headleft {
+        width: 100px;
+      }
+
+      .headright {
+        width: auto;
+        flex-direction: row-reverse;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="headleft">五倍紅寶石</div>
+      <div class="headright">
+        <span>Camp</span>
+        <span>線上</span>
+        <span>短期</span>
+        <span>技術</span>
+        <span>消息</span>
+      </div>
+    </div>
+  </body>
+</html>
