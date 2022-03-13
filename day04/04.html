@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .item {
+        width: 300px;
+        padding: 4px;
+        border: 1px solid orange;
+        margin: 30px;
+        position: relative;
+      }
+
+      .item img {
+        width: 100%;
+      }
+
+      .sale {
+        background-color: red;
+        padding: 3px 6px;
+        position: absolute;
+        top: 10px;
+        left: -6px;
+      }
+
+      .item .sale::after {
+        content: "";
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="item">
+      <div class="sale">五倍嚴選</div>
+      <img src="https://picsum.photos/300/200/?random=10" />
+      <h3>title</h3>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi
+        voluptatum soluta recusandae vitae numquam exercitationem maxime
+        nostrum, neque porro sequi assumenda quas eaque voluptatibus,
+        perspiciatis suscipit facere fugiat voluptas earum.
+      </p>
+    </div>
+  </body>
+</html>
