@@ -13,12 +13,10 @@
   bottom: 0;
 }
 .header {
-  width: auto;
   display: flex;
   margin: 5px;
   background-color: rgb(10, 10, 100);
   justify-content: end;
-  position: sticky;
 }
 
 .header_bottom {
@@ -27,6 +25,17 @@
   display: flex;
   justify-content: space-between;
   font-size: 16px;
+  align-items: center;
+  position: relative;
+}
+
+.nav ul {
+  position: absolute;
+  width: 300px;
+}
+.first-menu {
+  display: flex;
+  flex-direction: column;
 }
 a {
   text-decoration: none;
