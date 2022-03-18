@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .main-nav > ul > li > a::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        left: 0;
+        bottom: 0;
+        transform: scaleX(0);
+        transform-origin: right center;
+        background-color: blue;
+        transition: 0.2s;
+      }
+
+      .main-vav > ul > li::hover > a::after {
+        transform: scaleX(1);
+      }
+    </style>
+  </head>
+  <body></body>
+</html>

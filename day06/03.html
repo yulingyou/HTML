@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .item {
+        margin: 15px;
+        padding: 10px;
+        border: 1px solid red;
+        box-sizing: border-box;
+      }
+      .item img {
+        width: 100%;
+        vertical-align: top;
+        /* display: block; */
+      }
+      @media screen and (min-width: 768px) {
+        .wrap {
+          display: flex;
+          width: 720px;
+          margin: auto;
+        }
+        .item {
+          width: 210px;
+        }
+        @media screen and (min-width: 992px) {
+          .wrap {
+            width: 960px;
+          }
+          .item {
+            width: 290px;
+          }
+        }
+        @media screen and (min-width: 1200px) {
+          .wrap {
+            width: 1200px;
+          }
+          .item {
+            width: 370px;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="item">
+        <img src="https://picsum.photos/300/200/?random=10" />
+        <h2>title</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ratione
+          tempore facere nihil accusamus ut quos cupiditate saepe explicabo!
+          Repellat commodi perspiciatis rerum alias. Hic labore ea maxime
+          perspiciatis incidunt.
+        </p>
+      </div>
+      <div class="item">
+        <img src="https://picsum.photos/300/200/?random=10" />
+        <h2>title</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum,
+          nobis.
+        </p>
+      </div>
+      <div class="item">
+        <img src="https://picsum.photos/300/200/?random=10" />
+        <h2>title</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ratione
+          tempore facere nihil accusamus ut quos cupiditate saepe explicabo!
+          Repellat commodi perspiciatis rerum alias. Hic labore ea maxime
+          perspiciatis incidunt.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
