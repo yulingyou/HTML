@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        width: 1400px;
+        height: 1000px;
+      }
+      .wrap {
+        width: 960px;
+        height: 812px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+      }
+      .item {
+        width: 695px;
+        height: 430px;
+        margin: 10px;
+        padding: 10px;
+        justify-content: center;
+        position: relative;
+        /* position: relative; */
+        left: 150px;
+        top: 150px;
+      }
+      .item img {
+        width: 100%;
+      }
+      .item .tab {
+        background-color: red;
+        color: white;
+        padding: 4px 16px;
+        position: absolute;
+        top: 220px;
+        right: -2px;
+      }
+
+      .title {
+        height: 388px;
+        width: 355px;
+        background-color: gray;
+        z-index: 999;
+        position: absolute;
+      }
+
+      .title02 {
+        height: 388px;
+        width: 355px;
+        background-color: gray;
+        z-index: 999;
+        position: absolute;
+        left: 900px;
+        top: 1050px;
+      }
+
+      .title04 {
+        height: 388px;
+        width: 355px;
+        background-color: gray;
+        z-index: 999;
+        position: absolute;
+        left: 900px;
+        top: 3050px;
+      }
+      .text {
+        height: 275px;
+        width: 682px;
+        background-color: orange;
+        position: absolute;
+        top: 600px;
+        left: 300px;
+        z-index: 2;
+        color: black;
+      }
+      .gray {
+        width: 439px;
+        height: 290px;
+        background-color: rgba(177, 177, 177, 0.585);
+        position: absolute;
+        left: 740px;
+        top: 70px;
+        z-index: -1;
+      }
+
+      .gray02 {
+        width: 518px;
+        height: 413px;
+        background-color: rgba(177, 177, 177, 0.585);
+        position: absolute;
+        left: 550px;
+        top: 1100px;
+        z-index: -1;
+      }
+      .gray04 {
+        width: 518px;
+        height: 413px;
+        background-color: rgba(177, 177, 177, 0.585);
+        position: absolute;
+        left: 550px;
+        top: 3100px;
+        z-index: -1;
+      }
+      .gray03 {
+        width: 439px;
+        height: 290px;
+        background-color: rgba(177, 177, 177, 0.585);
+        position: absolute;
+        left: 740px;
+        top: 2080px;
+        z-index: -1;
+      }
+
+      .gray05 {
+        width: 439px;
+        height: 290px;
+        background-color: rgba(177, 177, 177, 0.585);
+        position: absolute;
+        left: 740px;
+        top: 4080px;
+        z-index: -1;
+      }
+
+      .text02 {
+        height: 275px;
+        width: 682px;
+        background-color: orange;
+        position: absolute;
+        top: 1600px;
+        left: 600px;
+        z-index: 2;
+        color: black;
+      }
+      .text04 {
+        height: 275px;
+        width: 682px;
+        background-color: orange;
+        position: absolute;
+        top: 3600px;
+        left: 600px;
+        z-index: 2;
+        color: black;
+      }
+
+      .text03 {
+        height: 275px;
+        width: 682px;
+        background-color: orange;
+        position: absolute;
+        top: 2600px;
+        left: 300px;
+        z-index: 2;
+        color: black;
+      }
+      .text05 {
+        height: 275px;
+        width: 682px;
+        background-color: orange;
+        position: absolute;
+        top: 4600px;
+        left: 300px;
+        z-index: 2;
+        color: black;
+      }
+      .item02 {
+        width: 695px;
+        height: 430px;
+        margin: 10px;
+        padding: 10px;
+        justify-content: center;
+        position: relative;
+        /* position: relative; */
+        left: 50px;
+        top: 150px;
+      }
+      .item02 img {
+        width: 100%;
+      }
+      .item02 .tab {
+        background-color: red;
+        color: white;
+        padding: 4px 16px;
+        position: absolute;
+        top: 220px;
+        left: -2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrap">
+        <div class="title">
+          <h2>01操控樂趣</h2>
+          <h3>人人滿意的駕駛體驗</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure error
+            ratione quasi cupiditate necessitatibus recusandae
+          </p>
+        </div>
+        <div class="text"></div>
+
+        <div class="item">
+          <div class="tab">></div>
+          <img src="https://picsum.photos/300/200/?random=10" />
+        </div>
+        <div class="gray"></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="wrap">
+        <div class="title02">
+          <h2>02安全守護</h2>
+          <h3>人人滿意的駕駛體驗</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure error
+            ratione quasi cupiditate necessitatibus recusandae
+          </p>
+        </div>
+        <div class="text02"></div>
+        <div class="item02">
+          <div class="tab">></div>
+          <img src="https://picsum.photos/300/200/?random=11" />
+        </div>
+        <div class="gray02"></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="wrap">
+        <div class="title">
+          <h2>03乘坐舒適</h2>
+          <h3>人人滿意的駕駛體驗</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure error
+            ratione quasi cupiditate necessitatibus recusandae
+          </p>
+        </div>
+        <div class="text03"></div>
+
+        <div class="item">
+          <div class="tab">></div>
+          <img src="https://picsum.photos/300/200/?random=12" />
+        </div>
+        <div class="gray03"></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="wrap">
+        <div class="title04">
+          <h2>04以人為本</h2>
+          <h3>人人滿意的駕駛體驗</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure error
+            ratione quasi cupiditate necessitatibus recusandae
+          </p>
+        </div>
+        <div class="text04"></div>
+        <div class="item02">
+          <div class="tab">></div>
+          <img src="https://picsum.photos/300/200/?random=14" />
+        </div>
+        <div class="gray04"></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="wrap">
+        <div class="title">
+          <h2>05引以為傲</h2>
+          <h3>人人滿意的駕駛體驗</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure error
+            ratione quasi cupiditate necessitatibus recusandae
+          </p>
+        </div>
+        <div class="text05"></div>
+
+        <div class="item">
+          <div class="tab">></div>
+          <img src="https://picsum.photos/300/200/?random=16" />
+        </div>
+        <div class="gray05"></div>
+      </div>
+    </div>
+  </body>
+</html>

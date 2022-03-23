@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      section {
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        background-color: rgba(221, 223, 223, 0.5);
+      }
+
+      .wrap {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      .item {
+        background-color: white;
+        margin: 20px 5px 20px 5px;
+        padding: 15px;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        border-radius: 50%;
+      }
+
+      .head {
+        display: flex;
+        max-width: 822px;
+        flex-wrap: wrap;
+        margin: 5px;
+        margin-bottom: 20px;
+        padding: 20px;
+        font-size: 20px;
+      }
+      h2 {
+        margin-bottom: 20px;
+      }
+
+      h3 {
+        text-align: center;
+      }
+
+      [class*="col-"] {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+      }
+      .col-6 {
+        width: 50%;
+      }
+      .col-12 {
+        width: 100%;
+      }
+      @media screen and (min-width: 768px) {
+        .instructors {
+          display: flex;
+          justify-content: flex-start;
+          width: 200px;
+        }
+
+        .col-md-3 {
+          width: 25%;
+        }
+        .col-md-6 {
+          width: 50%;
+        }
+      }
+      @media screen and (min-width: 992px) {
+        .wrap {
+          display: flex;
+        }
+        .head {
+          margin-left: 150px;
+          margin-right: 50px;
+        }
+        .col-lg-4 {
+          width: 33.333333%;
+        }
+        .col-lg-6 {
+          width: 50%;
+        }
+      }
+      @media screen and (min-width: 1200px) {
+        .col-xl-2 {
+          width: 16.666666%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="head">
+        <h2>講師陣容</h2>
+        <p>
+          我們的講師長期專注於網站開發技術領域，透過研討會、社群演講及授課方式將技術知識分享給更多人知道，讓更多人了解各個技術的美好之處。
+        </p>
+      </div>
+
+      <div class="wrap">
+        <div class="item Amos">
+          <div class="instructors">
+            <img src="https://picsum.photos/160/160/?random=10" />
+            <h3>Amos</h3>
+          </div>
+          <div class="text">
+            <p>
+              登陸取消情形東方他不森林總體初步財經流程，不起備案再度隊伍將在臨床處罰財富出版，不大感受不僅改善上去一口氣落實之處寶貝法規，上傳一段深深緊
+            </p>
+          </div>
+        </div>
+        <div class="item Eddie">
+          <div class="instructors">
+            <img src="https://picsum.photos/160/160/?random=11" />
+            <h3>Eddie</h3>
+          </div>
+          <div class="text">
+            <p>
+              登陸取消情形東方他不森林總體初步財經流程，不起備案再度隊伍將在臨床處罰財富出版，不大感受不僅改善上去一口氣落實之處寶貝法規，上傳一段深深緊
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="wrap">
+        <div class="item Kuro">
+          <div class="instructors">
+            <img src="https://picsum.photos/160/160/?random=13" />
+            <h3>Kuro</h3>
+          </div>
+          <div class="text">
+            <p>
+              登陸取消情形東方他不森林總體初步財經流程，不起備案再度隊伍將在臨床處罰財富出版，不大感受不僅改善上去一口氣落實之處寶貝法規，上傳一段深深緊
+            </p>
+          </div>
+        </div>
+        <div class="item Greentea">
+          <div class="instructors">
+            <img src="https://picsum.photos/160/160/?random=14" />
+            <h3>Greentea</h3>
+          </div>
+          <div class="text">
+            <p>
+              登陸取消情形東方他不森林總體初步財經流程，不起備案再度隊伍將在臨床處罰財富出版，不大感受不僅改善上去一口氣落實之處寶貝法規，上傳一段深深緊
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

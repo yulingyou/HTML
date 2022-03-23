@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .main-nav > ul {
+        display: flex;
+      }
+      .main-nav li {
+        list-style: none;
+        border: 1px solid #fff;
+        position: relative;
+      }
+      .main-nav a {
+        display: block;
+        padding: 10px 30px;
+        background-color: orange;
+        text-decoration: none;
+        color: #fff;
+        position: relative;
+      }
+
+      .main-nav > ul > li > a::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        left: 0;
+        bottom: 0;
+        transform: scaleX(0);
+        transform-origin: right center;
+        background-color: blue;
+        transition: 0.2s;
+      }
+      .main-nav > ul > li:hover > a::after {
+        transform: scaleX(1);
+      }
+      .main-nav li:hover > a {
+        background-color: #f00;
+      }
+      .main-nav a:hover {
+        background-color: red;
+      }
+
+      .main-nav .sub-nav {
+        display: none;
+        position: absolute;
+        left: 0;
+        /* width: 12em; */
+        white-space: nowrap;
+        padding-top: 20px;
+        border: 1px solid #000;
+      }
+      .main-nav li:hover > .sub-nav {
+        display: block;
+      }
+      .main-nav .sub-nav .sub-nav {
+        left: 100%;
+        top: 6px;
+        padding-top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="main-nav">
+      <ul>
+        <li>
+          <a href="">link</a>
+          <ul class="sub-nav">
+            <li>
+              <a href="">sub link1</a>
+              <ul class="sub-nav">
+                <li><a href="">sub sub link1</a></li>
+                <li><a href="">sub sub link1</a></li>
+                <li><a href="">sub sub link1</a></li>
+                <li><a href="">sub sub link1</a></li>
+              </ul>
+            </li>
+            <li><a href="">sub link1</a></li>
+            <li><a href="">sub link1</a></li>
+            <li><a href="">sub link1</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="">link</a>
+          <ul class="sub-nav">
+            <li><a href="">sub link2</a></li>
+            <li><a href="">sub link2</a></li>
+            <li><a href="">sub link2</a></li>
+            <li><a href="">sub link2</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="">link</a>
+          <ul class="sub-nav">
+            <li><a href="">sub link3</a></li>
+            <li><a href="">sub link3</a></li>
+            <li><a href="">sub link3</a></li>
+            <li><a href="">sub link3</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="">link</a>
+          <ul class="sub-nav">
+            <li><a href="">sub link4</a></li>
+            <li><a href="">sub link4</a></li>
+            <li><a href="">sub link4</a></li>
+            <li><a href="">sub link4</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>

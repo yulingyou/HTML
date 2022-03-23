@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: grey;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 10px;
+        position: relative;
+      }
+      .logo {
+        width: 80px;
+        height: 40px;
+      }
+
+      .hb {
+        width: 40px;
+        height: 40px;
+        background-color: red;
+      }
+
+      #menu-switch {
+        display: none;
+      }
+
+      @media screen and (max-width: 767px) {
+        #menu-switch:checked ~ header nav {
+          display: block;
+        }
+        .hb {
+          /* display: flex;
+            flex-direction: column; */
+          position: relative;
+        }
+        #menu-switch:checked ~ header .hb {
+          background-color: black;
+        }
+        .hb span {
+          width: 36px;
+          height: 4px;
+          background-color: white;
+          position: absolute;
+          left: 2px;
+        }
+
+        .hb span:nth-child(1) {
+          top: 8px;
+          transform: rotate(0deg);
+          transition: top 0.5s 0.5s, transform 0.5s 0s;
+        }
+
+        #menu-switch:checked ~ header .hb span:nth-child(1) {
+          top: 18px;
+          transform: rotate(45deg);
+          transition: top 0.5s 0.3s, transform 0.5s 0.8s;
+        }
+
+        .hb span:nth-child(2) {
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          opacity: 1;
+          transition: 0.3s;
+        }
+
+        #menu-switch:checked ~ header .hb span:nth-child(2) {
+          opacity: 0;
+        }
+        .hb span:nth-child(3) {
+          bottom: 8px;
+          transform: rotate(0deg);
+          transition: bottom 0.5s 0.5s, transform 0.5s 0s;
+        }
+        #menu-switch:checked ~ header .hb span:nth-child(3) {
+          bottom: 18px;
+          transform: rotate(-45deg);
+          transition: bottom 0.5s 0.3s, transform 0.5s 0.8s;
+        }
+
+        nav {
+          width: 100%;
+          box-sizing: border-box;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          background-color: orange;
+          display: none;
+        }
+        nav a {
+          display: block;
+        }
+      }
+
+      @media screen and (min-width: 768px) {
+        .hb {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <input type="checkbox" name="" id="menu-switch" />
+    <header>
+      <div class="logo"><img src="https://fakeimg.pl/80x40/200" /></div>
+
+      <label for="menu-switch" class="hb">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+      </nav>
+    </header>
+
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus,
+      non. Ad optio accusantium quo labore cum delectus quasi aliquam voluptatum
+      totam accusamus aut quas inventore nostrum sapiente praesentium impedit,
+      vitae a deserunt voluptatem deleniti. Maiores molestias sunt nesciunt
+      magnam beatae ad modi qui. Quod, odio sequi delectus molestiae rem rerum!
+      Dicta fugiat ab consectetur magni dolores reprehenderit ipsa rem. Itaque
+      tempore odit magnam assumenda maiores debitis temporibus aut inventore
+      voluptatem et obcaecati adipisci blanditiis perferendis voluptatibus
+      doloribus, recusandae qui aliquam veniam ipsa ab similique. Minus atque
+      veniam obcaecati libero exercitationem, voluptatem a optio earum, suscipit
+      sunt tempora soluta reprehenderit error. Nam, architecto repellat amet,
+      iure sed corrupti quasi aspernatur delectus impedit ut ipsa blanditiis
+      voluptatum ipsam quis ducimus, accusamus numquam laborum veritatis
+      dignissimos quam ratione. Nobis nulla hic cupiditate, autem maxime
+      deserunt fugit dolores delectus unde perferendis, assumenda at? Natus
+      officiis, maxime culpa facilis rem reprehenderit quia, consectetur quo hic
+      at obcaecati. Assumenda, voluptatum, molestiae obcaecati minima distinctio
+      perferendis a quae molestias ex hic mollitia ducimus quis laudantium
+      ratione doloribus doloremque impedit sequi non? Voluptatum voluptatibus
+      sed placeat impedit. Ipsam fuga totam excepturi consectetur tempore, quis
+      enim quisquam, ipsa consequatur nisi voluptas optio amet officiis quia
+      harum quam tempora velit. Possimus consectetur quia velit saepe? Aperiam
+      libero esse impedit consequatur natus, in reprehenderit. Quas facilis iure
+      vero corporis tempora? Accusantium cumque quis non, laboriosam dolorum
+      illum voluptas accusamus rem architecto maxime reprehenderit asperiores
+      mollitia excepturi dicta nam quos eaque inventore sunt aperiam!
+      Necessitatibus labore error natus itaque deserunt velit. Magni nesciunt
+      dicta culpa architecto quae dolorem saepe, quos porro officia veritatis
+      cupiditate, quo illum repellat. Ipsum qui sint maxime minus voluptates
+      ipsa sapiente iusto soluta, fuga eum quisquam totam, tempore ea cupiditate
+      atque exercitationem rem ad eius. Saepe commodi perferendis, nam, aperiam
+      ab omnis, facilis mollitia architecto autem id earum sit ratione. Harum
+      optio aspernatur inventore recusandae repellendus, pariatur alias dolorum
+      accusantium, assumenda nobis dicta eius facere sunt eum eveniet architecto
+      blanditiis veniam commodi maiores ea ab quidem autem. Impedit,
+      consequatur! Labore consequuntur porro similique non! Accusantium minus,
+      eos obcaecati illum cum incidunt eum adipisci, asperiores dolores
+      exercitationem soluta. Doloremque odio id nostrum aut dolorem ex? Iure
+      minus voluptates voluptate illo in. Dicta voluptatem, totam velit,
+      officiis non deserunt aut corrupti molestiae, facere sunt tempora aliquam.
+      Accusamus, soluta ad. Id optio beatae ad enim sit animi laboriosam ducimus
+      consequatur numquam, repudiandae ipsa, vitae, dignissimos quo! Quis sed
+      iste odit ab mollitia necessitatibus porro minus ad quo, voluptatibus,
+      illum voluptas excepturi impedit sint, magni eaque esse est magnam vel
+      recusandae! Id dignissimos consequatur dolorem, quis obcaecati iure sint
+      vero sapiente tempore at fugit delectus veniam, a amet quisquam iste,
+      expedita veritatis eveniet excepturi cum ad doloremque eligendi totam.
+      Iste tempore aliquid, consectetur reprehenderit minus nostrum voluptate
+      explicabo molestias magni ullam incidunt non illo nulla debitis. A
+      doloribus deserunt minus, corrupti nisi harum labore in cumque, iure non
+      nobis quae! Mollitia aliquid exercitationem cumque quae eum omnis
+      voluptatum doloremque aut repudiandae dolorem itaque quam, distinctio ad
+      eligendi corrupti atque quos soluta nesciunt?
+    </p>
+  </body>
+</html>
