@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      a.more {
+        background-color: red;
+      }
+
+      body div:last-of-type {
+        background-color: aqua;
+      }
+
+      body a:first-child {
+        background-color: green;
+      }
+
+      a .more {
+        background-color: blue;
+      }
+
+      body :not(h3) {
+        background-color: gray;
+      }
+      :disabled {
+        background-color: antiquewhite;
+        border: none;
+        color: cornsilk;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="">aaa</a>
+    <div class="more">div</div>
+    <a href="#" class="more">
+      a
+      <a href="#" class="more">aa</a>
+      <span class="more"><a href="" class="more">aaaa</a></span>
+    </a>
+    <span class="more">span</span>
+    <span>span</span>
+    <div>div</div>
+    <input type="button" value="送出" disabled />
+  </body>
+</html>
