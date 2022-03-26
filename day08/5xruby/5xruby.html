@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../day04/reset.css" />
+    <link rel="stylesheet" href="../grid.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .head {
+        display: flex;
+        max-width: 822px;
+        flex-wrap: wrap;
+        margin: 5px;
+        margin-bottom: 20px;
+        padding: 20px;
+        font-size: 22px;
+      }
+      .head h2 {
+        margin-bottom: 21px;
+        line-height: 2em;
+      }
+      .head h2::after {
+        content: "";
+        display: block;
+        width: 2em;
+        height: 2px;
+        background-color: red;
+      }
+      .head p {
+        font-size: 18px;
+        line-height: 1.2em;
+      }
+      .row {
+        background-color: coral;
+        padding: 10px;
+      }
+      .secondrow {
+        text-align: center;
+        padding-top: 20px;
+
+        background-color: aqua;
+      }
+      .secondrow::after {
+        content: "";
+        display: block;
+        width: 40em;
+        height: 2px;
+        background-color: gainsboro;
+        margin: auto;
+      }
+
+      .title-txt {
+        font-size: 20px;
+        background-color: greenyellow;
+        margin-top: -20px;
+      }
+
+      .title-txt h3 {
+        font-size: 20px;
+        background-color: yellow;
+      }
+      .title-txt h3 > div:first-child {
+        margin: 20px;
+        font-size: 16px;
+        background-color: aliceblue;
+      }
+      .title-txt h3 > div:first-child::after {
+        content: "";
+        display: block;
+        width: 2.5em;
+        height: 2px;
+        background-color: red;
+        margin: auto;
+        margin-top: 0.5em;
+      }
+      .pic img {
+        vertical-align: middle;
+        border-radius: 50%;
+        width: 25%;
+      }
+
+      .social-list ul {
+        display: flex;
+        justify-content: center;
+      }
+      .social-list li {
+        list-style: none;
+        margin: 10px;
+      }
+      a {
+        text-decoration: none;
+      }
+      .social-list a:link,
+      .social-list a:visited {
+        color: grey;
+      }
+
+      .social-list a:hover {
+        color: #222;
+      }
+
+      .other ul {
+        display: flex;
+        margin-top: 1em;
+      }
+      .other ul li {
+        border: 2px solid red;
+        margin-right: 20px;
+      }
+      .contain-txt,
+      .other {
+        background-color: pink;
+        line-height: 1.5em;
+        margin-top: 25px;
+        margin-bottom: 25px;
+      }
+      .other {
+        word-spacing: 1em;
+        background-color: lightblue;
+      }
+      .other {
+        margin-top: 10px;
+      }
+      .other h4::after {
+        content: "";
+        display: block;
+        width: 28em;
+        height: 2px;
+        background-color: gainsboro;
+        margin: auto;
+        margin-top: -0.8em;
+        margin-right: 0em;
+      }
+      @media screen and (min-width: 768px) {
+        .pic img {
+          width: 100%;
+        }
+        .title {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          margin-left: -25px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="head">
+        <h2>講師陣容</h2>
+        <p>
+          我們的講師長期專注於網站開發技術領域，透過研討會、社群演講及授課方式將技術知識分享給更多人知道，讓更多人了解各個技術的美好之處。
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <div class="teachers">
+            <div class="row secondrow">
+              <div class="col-12 col-md-4">
+                <div class="pic">
+                  <img src="./amos.webp" alt="amos" />
+                </div>
+              </div>
+              <div class="col-12 col-md-8 title">
+                <div class="title-txt">
+                  <h3>
+                    <div>HTML / CSS 講師</div>
+                    <div>李建杭 (Amos Lee)</div>
+                  </h3>
+                  <div class="social-list">
+                    <ul>
+                      <li>
+                        <a href="#"><i class="fas fa-globe"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="contain-txt">
+              <p>
+                從視覺設計轉職前端的斜槓開發者，活躍於臺灣各大技術研討會，熟稔
+                <strong> HTML & CSS、Bootstrap、RWD、CSS3 </strong
+                >等，為國內知名前端技術講師。 2018 年成為<a href="#">Youtuber</a
+                >，致力於使用簡單易懂的方式讓新手能夠輕鬆學習前端開發技能。<a
+                  href="#"
+                  >iT 邦幫忙鐵人賽</a
+                >
+                連續<strong>三屆冠軍</strong>、連續<strong>兩屆優選</strong>，於2020
+                出版
+                <a href="#"
+                  >金魚都能懂的
+                  CSS選取器：金魚都能懂了你還怕學不會嗎（iT邦幫忙鐵人賽系列書）</a
+                >「」一書，除了熱衷於牛排的熟成，目前日益精進於釣魚技能。
+              </p>
+            </div>
+            <div class="other">
+              <h4>講師其他課程</h4>
+              <ul>
+                <li><a href="#">網頁前端設計女性專班</a></li>
+                <li><a href="#">HTML網頁設計新手村</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="teachers">
+            <div class="row secondrow">
+              <div class="col-12 col-md-4">
+                <div class="pic">
+                  <img src="./eddie.webp" alt="eddiephoto" />
+                </div>
+              </div>
+              <div class="col-12 col-md-8 title">
+                <div class="title-txt">
+                  <h3>
+                    <div>HTML / CSS 講師</div>
+                    <div>李建杭 (Amos Lee)</div>
+                  </h3>
+                  <div class="social-list">
+                    <ul>
+                      <li>
+                        <a href="#"><i class="fas fa-globe"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="contain-txt">
+              <p>
+                從視覺設計轉職前端的斜槓開發者，活躍於臺灣各大技術研討會，熟稔
+                <strong> HTML & CSS、Bootstrap、RWD、CSS3 </strong
+                >等，為國內知名前端技術講師。 2018 年成為<a href="#">Youtuber</a
+                >，致力於使用簡單易懂的方式讓新手能夠輕鬆學習前端開發技能。<a
+                  href="#"
+                  >iT 邦幫忙鐵人賽</a
+                >
+                連續<strong>三屆冠軍</strong>、連續<strong>兩屆優選</strong>，於2020
+                出版
+                <a href="#"
+                  >金魚都能懂的
+                  CSS選取器：金魚都能懂了你還怕學不會嗎（iT邦幫忙鐵人賽系列書）</a
+                >「」一書，除了熱衷於牛排的熟成，目前日益精進於釣魚技能。
+              </p>
+            </div>
+            <div class="other">
+              <h4>講師其他課程</h4>
+              <ul>
+                <li><a href="#">網頁前端設計女性專班</a></li>
+                <li><a href="#">HTML網頁設計新手村</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="teachers">
+            <div class="row secondrow">
+              <div class="col-12 col-md-4">
+                <div class="pic">
+                  <img src="./Kuro.webp" alt="kurophoto" />
+                </div>
+              </div>
+              <div class="col-12 col-md-8 title">
+                <div class="title-txt">
+                  <h3>
+                    <div>HTML / CSS 講師</div>
+                    <div>李建杭 (Amos Lee)</div>
+                  </h3>
+                  <div class="social-list">
+                    <ul>
+                      <li>
+                        <a href="#"><i class="fas fa-globe"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="contain-txt">
+              <p>
+                從視覺設計轉職前端的斜槓開發者，活躍於臺灣各大技術研討會，熟稔
+                <strong> HTML & CSS、Bootstrap、RWD、CSS3 </strong
+                >等，為國內知名前端技術講師。 2018 年成為<a href="#">Youtuber</a
+                >，致力於使用簡單易懂的方式讓新手能夠輕鬆學習前端開發技能。<a
+                  href="#"
+                  >iT 邦幫忙鐵人賽</a
+                >
+                連續<strong>三屆冠軍</strong>、連續<strong>兩屆優選</strong>，於2020
+                出版
+                <a href="#"
+                  >金魚都能懂的
+                  CSS選取器：金魚都能懂了你還怕學不會嗎（iT邦幫忙鐵人賽系列書）</a
+                >「」一書，除了熱衷於牛排的熟成，目前日益精進於釣魚技能。
+              </p>
+            </div>
+            <div class="other">
+              <h4>講師其他課程</h4>
+              <ul>
+                <li><a href="#">網頁前端設計女性專班</a></li>
+                <li><a href="#">HTML網頁設計新手村</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="teachers">
+            <div class="row secondrow">
+              <div class="col-12 col-md-4">
+                <div class="pic">
+                  <img src="./milkmidi.webp" alt="amos" />
+                </div>
+              </div>
+              <div class="col-12 col-md-8 title">
+                <div class="title-txt">
+                  <h3>
+                    <div>HTML / CSS 講師</div>
+                    <div>李建杭 (Amos Lee)</div>
+                  </h3>
+                  <div class="social-list">
+                    <ul>
+                      <li>
+                        <a href="#"><i class="fas fa-globe"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="contain-txt">
+              <p>
+                從視覺設計轉職前端的斜槓開發者，活躍於臺灣各大技術研討會，熟稔
+                <strong> HTML & CSS、Bootstrap、RWD、CSS3 </strong
+                >等，為國內知名前端技術講師。 2018 年成為<a href="#">Youtuber</a
+                >，致力於使用簡單易懂的方式讓新手能夠輕鬆學習前端開發技能。<a
+                  href="#"
+                  >iT 邦幫忙鐵人賽</a
+                >
+                連續<strong>三屆冠軍</strong>、連續<strong>兩屆優選</strong>，於2020
+                出版
+                <a href="#"
+                  >金魚都能懂的
+                  CSS選取器：金魚都能懂了你還怕學不會嗎（iT邦幫忙鐵人賽系列書）</a
+                >「」一書，除了熱衷於牛排的熟成，目前日益精進於釣魚技能。
+              </p>
+            </div>
+            <div class="other">
+              <h4>講師其他課程</h4>
+              <ul>
+                <li><a href="#">網頁前端設計女性專班</a></li>
+                <li><a href="#">HTML網頁設計新手村</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
